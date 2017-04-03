@@ -1,0 +1,22 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: lightgray;
+}
+.container {
+	margin: auto;
+	width: 60%;
+}
+
+.input {
+	padding: 5px 5px;
+	width: 30%;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+}
+
+
+
