@@ -1,4 +1,26 @@
-<div ng-repeat="movie in details">
-	<div class="title">{{movie.Title}}</div>
-	<div class="year">{{movie.Year}}</div>
+
+<div class="movieinfo">
+	<div class="movieblock" ng-repeat="movie in movies" ng-click="showMovieDetails(movie)" ng-show="showDetails">
+		<div class="title">{{movie.Title}}</div>
+		<div class="year">{{movie.Year}}</div>
+	</div>
+</div>
+
+<div class="details" ng-hide="showDetails">
+	<div class="column">
+		<div><b>Actors:</b> {{moviedetail.Actors}}</div>
+		<div><b>Rated:</b> {{moviedetail.Rated}}</div>
+		<div><b>Year:</b> {{moviedetail.Year}}</div>
+		<div><b>Awards:</b> {{moviedetail.Awards}}</div>
+		<div><b>Director:</b> {{moviedetail.Director}}</div>
+		<div><b>Country:</b> {{moviedetail.Country}}</div>
+		<div><b>Genre:</b> {{moviedetail.Genre}}</div>
+		<div><b>Language:</b> {{moviedetail.Language}}</div>
+		<div><b>Runtime:</b> {{moviedetail.Runtime}}</div>
+		<div><b>IMDB Rating:</b> {{moviedetail.imdbRating}}</div>
+		<div><b>Plot:</b> {{moviedetail.Plot}}</div>
+	</div>
+	<div class="column">
+		<img class="movieimg" ng-src="{{moviedetail.Poster}}"> 
+	</div>
 </div>

@@ -8,18 +8,18 @@
 <body ng-app="myApp">
 <div class="container" ng-controller="searchMovie">
 	<h1>Welcome to OMDB movie search</h1>
-	<p>You can use search movie by title.</p>
-	<form>
-		<div>
-			<input type="text" name="" placeholder="movie name" class="input" ng-model="movieName">
-			<input type="button" name="" value="Search" class="btn" ng-click="getMovie()">
-		</div>
-	</form>
+	<div class="home">
+		<p>Please input movie name you would like to search.</p>
+		<form>
+			<div>
+				<input type="text" name="" placeholder="movie name" class="input" ng-model="movieName">
+				<input type="button" name="" value="Search" class="btn" ng-click="getMovie()">
+			</div>
+		</form>
+	</div>
 	<div>
 		<div movie-search-results></div>
 	</div>
-
-	
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/script.js"></script>

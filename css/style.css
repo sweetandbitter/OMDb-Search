@@ -5,17 +5,51 @@ body {
 }
 .container {
 	margin: auto;
-	width: 60%;
+	width: 80%;
+}
+
+.container h1{
+	text-align: center;
+}
+
+.home {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.movieinfo {
+	width: 50%;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.movieblock{
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+
+.movieblock:hover{
+	background-color: white;
 }
 
 .input {
 	padding: 5px 5px;
-	width: 30%;
+	width: 45%;
 }
 
 .btn {
 	cursor: pointer;
 	padding: 5px 15px;
+}
+
+.details{
+	margin-left: 10%;
+}
+
+.column{
+	width: 45%;
+  	float:left;
+  	margin-left: 5%;
 }
 
 
