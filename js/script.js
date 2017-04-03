@@ -10,10 +10,11 @@ angular.module("myApp",[])
 				/*angular.forEach($scope.details, function(value, key){
 					console.log(value);
 				})*/
+				$scope.error = data.Error;
 				$scope.showDetails = true;
 			})
 			.error(function(data, status){
-				console.log("Not Found");
+				alert("Error, Can not get resource.");
 			})
 		}
 		$scope.showMovieDetails = function(movie){

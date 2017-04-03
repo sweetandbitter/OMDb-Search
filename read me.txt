@@ -1,0 +1,12 @@
+This is a small project for OMDb API to Search movies.
+
+1. Create a localhost to open index.html page.
+
+2. Type movie name in the input box and click search button.
+
+3. Webpage will show the top 10 result matching your query.
+
+4. You can click the result items to see the details of movies.
+
+5. You can change your input query to start another movie search.
+

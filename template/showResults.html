@@ -1,9 +1,10 @@
 
-<div class="movieinfo">
-	<div class="movieblock" ng-repeat="movie in movies" ng-click="showMovieDetails(movie)" ng-show="showDetails">
+<div class="movieinfo" ng-show="showDetails">
+	<div class="movieblock" ng-repeat="movie in movies" ng-click="showMovieDetails(movie)" >
 		<div class="title">{{movie.Title}}</div>
 		<div class="year">{{movie.Year}}</div>
 	</div>
+	<div><b>{{error}}</b></div>
 </div>
 
 <div class="details" ng-hide="showDetails">
